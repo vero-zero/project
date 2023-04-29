@@ -1,3 +1,15 @@
+
+<!DOCTYPE html>
+<html>
+<head>
+    <title>게임화면</title>
+</head>
 <body>
-    <span>게임화면</span>
+    {% for img_url in selected_imgs %}
+    <span>
+        <img src="{{ img_url }}" alt="">
+        <input type="text" name="answer" id="answer">
+    </span>
+    {% endfor %}
 </body>
+</html>
